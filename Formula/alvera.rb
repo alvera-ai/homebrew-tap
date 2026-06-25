@@ -1,8 +1,8 @@
 class Alvera < Formula
   desc "Alvera platform CLI — manifest-driven provisioning + spec conduit"
-  homepage "https://github.com/alvera-ai/platform-sdk"
+  homepage "https://github.com/alvera-ai/homebrew-tap"
   version "0.11.0"
-  license "Elastic-2.0"
+  license :cannot_represent
 
   on_macos do
     on_arm do

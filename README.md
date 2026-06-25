@@ -28,13 +28,19 @@ brew update
 brew upgrade alvera
 ```
 
-## Source
+## Binaries
 
-The CLI itself is built from [`alvera-ai/platform-sdk`](https://github.com/alvera-ai/platform-sdk).
-Release binaries are attached to GitHub releases on that repo. This tap
-just points at them with verified sha256 checksums.
+The CLI binaries are published as **GitHub Releases on this tap repo**, and
+the formula points at them with verified sha256 checksums. Hosting them here
+(a public repo) is what lets `brew install` fetch them while the CLI's source
+stays private.
+
+## License
+
+The `alvera` CLI is **proprietary** — Alvera CLI License Agreement, all
+rights reserved. You may install and run it to use the Alvera platform; you
+may not modify, reverse engineer, or redistribute it.
 
 ## Platforms
 
-Currently darwin-arm64 only. Multi-arch (darwin-x64, linux-x64,
-linux-arm64) ships alongside the `release-cli.yml` workflow.
+darwin-arm64, darwin-x64, linux-x64, linux-arm64.
