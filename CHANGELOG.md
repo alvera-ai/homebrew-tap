@@ -1,5 +1,55 @@
 # Changelog
 
+## [0.13.0](https://github.com/alvera-ai/platform-sdk/compare/v0.12.1...v0.13.0) (2026-07-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* **cli:** cached bundles move to ~/.alvera/configs/<stem>/<hash>/; the next render repopulates them.
+* **cli:** per-environment manifests — the filename is the stem, nothing is guessed
+
+### Features
+
+* **cli:** alvera fork-env — the second environment, born red ([2c5d3de](https://github.com/alvera-ai/platform-sdk/commit/2c5d3de0d2dc4264f0be1d386d2733fbaa3cb555))
+* **cli:** alvera import — Terraform-style adoption of live resources, all 10 kinds ([0668bd4](https://github.com/alvera-ai/platform-sdk/commit/0668bd4cc72979a243e631a6c449a597133e4ea8))
+* **cli:** alvera init scaffolds infra/AGENTS.md (infra-member agent router) ([2650d53](https://github.com/alvera-ai/platform-sdk/commit/2650d53ddc44407b59e6634d907c7fe0df021e8c))
+* **cli:** apply points at llm-export the moment the cache matters ([b75e5ab](https://github.com/alvera-ai/platform-sdk/commit/b75e5ab1087ef710e6d4ee74946e37da8094cb14))
+* **cli:** cookbook batch A — rest-fetch, generic-tables, ASU, agent-invoke, system-templates, bulk-ingest ([080a12e](https://github.com/alvera-ai/platform-sdk/commit/080a12ed823bb91bad3a8fb1ab668530e375239b))
+* **cli:** cookbook batch B — the six SMS/workflow business scenarios ([3ec434a](https://github.com/alvera-ai/platform-sdk/commit/3ec434aa1d19c17db3d79261c4875d261617eac5))
+* **cli:** cookbook batch C — LLM scenarios + talk-to-data mapping note; corpus complete (17) ([0097f5b](https://github.com/alvera-ai/platform-sdk/commit/0097f5b5ed50e05f3dcf99e51793dea01b023fd5))
+* **cli:** cookbook corpus macro + welcome-sms pilot scenario ([f3587fe](https://github.com/alvera-ai/platform-sdk/commit/f3587feee3b1339f8c3a98f10f808e8fc2ffbcd4))
+* **cli:** every verb accepts -c/-s; errors name the verb's correct form ([a2a3223](https://github.com/alvera-ai/platform-sdk/commit/a2a3223657c8481a8fa9c133fb5006e420c73a29))
+* **cli:** GH-767 Mailgun endpoint_url override on the email tool ([e910054](https://github.com/alvera-ai/platform-sdk/commit/e910054502c48d2ba5b78dd7a628310eab14876a))
+* **cli:** llm-export bare mode — ground an empty tenant with no -c ([a594f4f](https://github.com/alvera-ai/platform-sdk/commit/a594f4f709bc5da1147ece53149060e58e165023))
+* **cli:** llm-export vendors both corpora into root .agent/ ([500f38b](https://github.com/alvera-ai/platform-sdk/commit/500f38b27a109d923d3dbc8a15d2b1b32ab767b5))
+* **cli:** per-environment manifests — the filename is the stem, nothing is guessed ([4a1cce7](https://github.com/alvera-ai/platform-sdk/commit/4a1cce74475b9af22bd06fe7af9b2bb9fe62ea2b))
+* **cli:** the human gate — render-human verb + init hook injection ([6521012](https://github.com/alvera-ai/platform-sdk/commit/6521012963a2fa536edaf9f193b098d37a5f76c0))
+* **cli:** verify against the mono — llm-export infra topology, guides, GH-749 domains ([132efd0](https://github.com/alvera-ai/platform-sdk/commit/132efd01f91913a43c0513efd770889d83babef7))
+* GH-767 action-status-updater refresh — SDK method + CLI verb ([c57a04a](https://github.com/alvera-ai/platform-sdk/commit/c57a04a151b3e1326e357b2ace745c6903f73803))
+* **llm-export:** inline the by-use-case cookbook index into the managed block ([b72ccfb](https://github.com/alvera-ai/platform-sdk/commit/b72ccfb489d08be4b636ebb4ffe8bb384b366a5e))
+
+
+### Bug Fixes
+
+* **cli:** a created resource with a red contract reports created, not failed ([21fb2dc](https://github.com/alvera-ai/platform-sdk/commit/21fb2dc419ce1b25f2fd9a17917219952bb92474))
+* **cli:** alvera import emits tool credential secrets the GET omits ([25745d6](https://github.com/alvera-ai/platform-sdk/commit/25745d6a2021858ae1df3130aca4d545492222b5))
+* **cli:** alvera import preserves nested writable sub-objects (workflow actions, interop agents) ([4027ae4](https://github.com/alvera-ai/platform-sdk/commit/4027ae4e3c4fb7fa9315ac49bd04a42a85af0399))
+* **cli:** alvera import preserves workflow decision_config.output_schema ([4268b25](https://github.com/alvera-ai/platform-sdk/commit/4268b259b0931423e145d96fe061a9957b59cff0))
+* **cli:** correct stale ASU message_config test fixture ([f53a572](https://github.com/alvera-ai/platform-sdk/commit/f53a572c5d2f1ba3f3921834d22aa305fc56d34e))
+* **cli:** gate generic-table search smoke on regulated-table migration ([97f7e75](https://github.com/alvera-ai/platform-sdk/commit/97f7e75c85408616180c59137b31d54973492246))
+* **cli:** gitignore every secrets file, and never re-run a mutating command for a GIF ([2c3db44](https://github.com/alvera-ai/platform-sdk/commit/2c3db44f24699aab677db680033be9f1fee425a0))
+* **cli:** green the mock CI — two long-red contract tests ([6643b51](https://github.com/alvera-ai/platform-sdk/commit/6643b5196c2a2b2164f6979c9039e0636c730acb))
+* **cli:** init tells the truth about infra/.state/ — committed, not gitignored ([f518772](https://github.com/alvera-ai/platform-sdk/commit/f518772e3562c8176732950376dfdb3302f351c0))
+* **cli:** keep internal recorder gotcha out of the consumer guides corpus ([9d68ed4](https://github.com/alvera-ai/platform-sdk/commit/9d68ed4e51b88675925e883ec276e698df3a762d))
+* **cli:** message-family datasets carry no default DAC — align the datalake contracts ([c13371e](https://github.com/alvera-ai/platform-sdk/commit/c13371ecc2518c5d18178ebe3da665330070ada2))
+* **cli:** regen off GH-749 — render gate rejects non-whitelist timezones locally ([3e33beb](https://github.com/alvera-ai/platform-sdk/commit/3e33beb87167af580ea65568df2ed105a2c980f0))
+* **cli:** render-human — datalake section + artifact-faithful detail panes ([be284d7](https://github.com/alvera-ai/platform-sdk/commit/be284d7ea77d1d085eccafe44324fb860b5d6c6c))
+* **cli:** scaffolds tell the wire truth; empty tables fail at render ([ae0c9d4](https://github.com/alvera-ai/platform-sdk/commit/ae0c9d4daaebbd3c34d1abd90648ad6dfd4ac6de))
+* **cli:** secrets scan is TOML-first — comments are not templates ([9198c5d](https://github.com/alvera-ai/platform-sdk/commit/9198c5d99a125b0065fad672c9ce07abd6f8e2ca))
+* **cli:** the datalake timezone is an 8-zone US whitelist — say so everywhere ([61ceb24](https://github.com/alvera-ai/platform-sdk/commit/61ceb24b3c65b0b213d3f875a0a8edc29954db11))
+* **cli:** the render cache is keyed by manifest, not by directory ([cc266a7](https://github.com/alvera-ai/platform-sdk/commit/cc266a7d99b88e0cc1f04512438db4d88d73a5f1))
+* **sdk:** --debug names the server, not just the route ([36eb58e](https://github.com/alvera-ai/platform-sdk/commit/36eb58ed87b454b127f35f850876038243d61092))
+
 ## [0.12.1](https://github.com/alvera-ai/platform-sdk/compare/v0.12.0...v0.12.1) (2026-06-25)
 
 
