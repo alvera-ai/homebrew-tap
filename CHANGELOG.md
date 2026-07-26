@@ -1,5 +1,39 @@
 # Changelog
 
+## [0.14.0](https://github.com/alvera-ai/platform-sdk/compare/v0.13.0...v0.14.0) (2026-07-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* **sdk:** GH-781 MMS media_url is a plain public-URL string; ASU action_log_config required
+
+### Features
+
+* **cli:** GH-781 scaffold the mms_request authoring shape — string media_url, connected-app keys, real-STS probe note ([1e47541](https://github.com/alvera-ai/platform-sdk/commit/1e4754116291956cc792dc6cc451fc90637a5354))
+* **cli:** GH-80 --template reads a live resource's stored Liquid back ([becd0c8](https://github.com/alvera-ai/platform-sdk/commit/becd0c819dcb84131987fadb56026e99f8cf40af))
+* **cli:** GH-80 --version names its channel and flags a shadowing stale keg ([46ca0ef](https://github.com/alvera-ai/platform-sdk/commit/46ca0ef0d358a1916eb8bfd29cfe1e3a0188f8eb))
+* **cli:** GH-80 born-green seeds carry the UNCURED marker — a floor, not a verdict ([93f8f5b](https://github.com/alvera-ai/platform-sdk/commit/93f8f5bffd2c3c0c0cc0e867eabdbdeae1634df6))
+* **cli:** GH-80 complete the tool scaffold matrix — every valid intent×body pair; voice refuses loudly ([d0b1ed1](https://github.com/alvera-ai/platform-sdk/commit/d0b1ed1ec01bf54c559f0d8d577821e0812abd6d))
+* **cli:** GH-80 dac-logs + workflow-logs — the break-glass diagnosis verbs ([bfdde16](https://github.com/alvera-ai/platform-sdk/commit/bfdde16e71b4386418cda60aff7aa7087bed256f))
+* **cli:** GH-80 scaffold enum comments projected from the schema — hand-written lists banned ([35d46ce](https://github.com/alvera-ai/platform-sdk/commit/35d46ce0159901c87357419f55ac4fbbf5a72875))
+* **cli:** GH-80 scaffold the status_poller + rest_api tool variant ([17a17dd](https://github.com/alvera-ai/platform-sdk/commit/17a17dd1387351ae5fbdb4c576470dc975654b3c))
+* **cli:** GH-80 verbs speak platform English — data-activation-client-logs (+kept alias), LOG ID drill key, refresh verb proven 4/4 ([285e5b6](https://github.com/alvera-ai/platform-sdk/commit/285e5b64c036c888d66d75734609926315ab4ab4))
+* **sdk:** GH-781 ASU poll window uses now_msec, not bare now ([f8f28bd](https://github.com/alvera-ai/platform-sdk/commit/f8f28bdf987ee488cdba4d39ee6f52b36a81380e))
+* **sdk:** GH-781 last_run_status gains partial — three-outcome poll semantics ([6b3c8d7](https://github.com/alvera-ai/platform-sdk/commit/6b3c8d77898594e118c979a3d4d32910823c3202))
+* **sdk:** GH-781 message delivery-status enum widened to 13 values + status_description ([741ae56](https://github.com/alvera-ai/platform-sdk/commit/741ae56a99d2d97c1025c78899249b71d5c0c26a))
+* **sdk:** GH-781 MMS media_url is a plain public-URL string; ASU action_log_config required ([ec39a4d](https://github.com/alvera-ai/platform-sdk/commit/ec39a4d4057a722bffcfc859f2c22116bdb31df7))
+* **sdk:** GH-781 update-message-tracking carries the engagement status ([be3581f](https://github.com/alvera-ai/platform-sdk/commit/be3581fea9d12f028f3584db829f69acf5e2b72c))
+
+
+### Bug Fixes
+
+* **cli:** GH-781 close two contract drifts the pre-PR sweep exposed ([555110b](https://github.com/alvera-ai/platform-sdk/commit/555110bf3e903f02af2223aad616d7e50134c7e5))
+* **cli:** GH-80 a status_poller's born-red cure is one it can carry out ([7db8852](https://github.com/alvera-ai/platform-sdk/commit/7db885274591b1fbf5a2166afad24a0839e60800))
+* **cli:** GH-80 follow-up hints echo the invoked --profile ([1ac8f83](https://github.com/alvera-ai/platform-sdk/commit/1ac8f83d90f67fdeedf5cfe705a7b620287b251e))
+* **cli:** GH-80 fork-env blanks connection booleans — enable_ssl is identity too ([c9b7de4](https://github.com/alvera-ai/platform-sdk/commit/c9b7de4a64c0a4fe8f4d03bc37dee7c2dc07009b))
+* **cli:** GH-80 the restapi ASU scaffold emits an appliable poll ([a9c3a6e](https://github.com/alvera-ai/platform-sdk/commit/a9c3a6e3dd695d9714a8f8eb4527d1c53f3cc1c5))
+* GH-781 action_log_config is request-required — curated type, corpus, cookbook, scaffold seed, AJV layer ([2501d87](https://github.com/alvera-ai/platform-sdk/commit/2501d87b88920412950e97a2aefe7238f2d398e7))
+
 ## [0.13.0](https://github.com/alvera-ai/platform-sdk/compare/v0.12.1...v0.13.0) (2026-07-19)
 
 
