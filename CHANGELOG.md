@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.15.0](https://github.com/alvera-ai/platform-sdk/compare/v0.14.0...v0.15.0) (2026-07-27)
+
+
+### Features
+
+* **cli:** GH-84 ALVERA_AUTO_APPROVE — the apply lever a permission classifier allows ([6932135](https://github.com/alvera-ai/platform-sdk/commit/6932135caf8c20f20b5f9a2680496a5d7ac23de3))
+* **cli:** GH-84 an undefined identifier names get-metadata; the physical mapping is documented ([b0f0a3d](https://github.com/alvera-ai/platform-sdk/commit/b0f0a3db368bf2f6591f1bcf97a4045804b4634e))
+* **cli:** GH-84 lint a defeated idempotency key — and strip the uuid the corpus taught ([1287fb3](https://github.com/alvera-ai/platform-sdk/commit/1287fb3937ca298e640517b641c352de0e09e7c5))
+* **cli:** GH-84 render human joins its group — render-human kept as a permanent alias ([96d7dbe](https://github.com/alvera-ai/platform-sdk/commit/96d7dbe0aa3024683b902518d6cf320de14e416b))
+* **cli:** GH-84 the metadata cache states when it was generated, and warns when stale ([fb8eed0](https://github.com/alvera-ai/platform-sdk/commit/fb8eed05e0901f237cd566784a8bb9e7acd5757d))
+
+
+### Bug Fixes
+
+* **cookbook:** GH-84 paginated-restapi-poller meets the events_output_schema floor ([98dd4b7](https://github.com/alvera-ai/platform-sdk/commit/98dd4b76b103d8923d95638d852ef98ebe1f876e))
+
 ## [0.14.0](https://github.com/alvera-ai/platform-sdk/compare/v0.13.0...v0.14.0) (2026-07-26)
 
 
