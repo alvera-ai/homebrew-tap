@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.16.0](https://github.com/alvera-ai/platform-sdk/compare/v0.15.0...v0.16.0) (2026-08-10)
+
+
+### Features
+
+* **cli:** --scheduled-at and the workflow-runs read/cancel verbs ([a0bb4e4](https://github.com/alvera-ai/platform-sdk/commit/a0bb4e487a622632a5e84b01772b45af361209a0))
+* consume the platform 0.23 wire delta — run-workflow becomes schedule-only, Twilio senders, shared credentials ([f65b70b](https://github.com/alvera-ai/platform-sdk/commit/f65b70b8c0ca2e120782729060ef4f03850a52d2))
+
+
+### Bug Fixes
+
+* **cli:** add required `tags` to cookbook workflow recipes ([58015da](https://github.com/alvera-ai/platform-sdk/commit/58015dafefb5f62e3b64aedaa7b42a679e021d38)), closes [#92](https://github.com/alvera-ai/platform-sdk/issues/92)
+* **cli:** add required `tags` to the per-industry workflow fixture ([d3b025c](https://github.com/alvera-ai/platform-sdk/commit/d3b025c490e2c8da144f6d08f2fd8a4fe9cb178d)), closes [#92](https://github.com/alvera-ai/platform-sdk/issues/92)
+* **cli:** carry workflow `tags` through scaffold, import, and checksum ([70e404b](https://github.com/alvera-ai/platform-sdk/commit/70e404bfe2505980728fcc6e3c88d63830d1891e)), closes [#92](https://github.com/alvera-ai/platform-sdk/issues/92)
+* **cli:** import-depth's workflow fixture was missing the required tags ([94ee1d9](https://github.com/alvera-ai/platform-sdk/commit/94ee1d93ffa5e896b73c81ba37394555a144b616))
+* **cli:** move the workflow smoke and scaffolds onto the scheduled-run model ([cf16d15](https://github.com/alvera-ai/platform-sdk/commit/cf16d151771dd60d768b253ec96a4c4539dde635))
+* **cli:** teach import the Twilio body's credential shape ([825b2c3](https://github.com/alvera-ai/platform-sdk/commit/825b2c3bb32f7364aa9bb4f33e894ee0214317fa))
+
 ## [0.15.0](https://github.com/alvera-ai/platform-sdk/compare/v0.14.0...v0.15.0) (2026-07-27)
 
 
