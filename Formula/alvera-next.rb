@@ -8,30 +8,30 @@
 class AlveraNext < Formula
   desc "Alvera platform CLI (prerelease channel) — point alvera at unstable on demand"
   homepage "https://github.com/alvera-ai/homebrew-tap"
-  version "0.17.0-next.gae2995f"
+  version "0.18.0-next.g58b9183"
   license :cannot_represent
 
   keg_only "prerelease channel for the stable alvera formula; run 'brew link --overwrite --force alvera-next' to point alvera at it"
 
   on_macos do
     on_arm do
-      url "https://github.com/alvera-ai/homebrew-tap/releases/download/v0.17.0-next.gae2995f/alvera-0.17.0-next.gae2995f-darwin-arm64.tar.gz"
-      sha256 "26b6680b388242350f088293d7fb72102947ed97bc4f57c2939461d65a31c4ad"
+      url "https://github.com/alvera-ai/homebrew-tap/releases/download/v0.18.0-next.g58b9183/alvera-0.18.0-next.g58b9183-darwin-arm64.tar.gz"
+      sha256 "48007da3b3eea35c67750b7245d27e59e64bd61bd27e46279da13c649372b313"
     end
     on_intel do
-      url "https://github.com/alvera-ai/homebrew-tap/releases/download/v0.17.0-next.gae2995f/alvera-0.17.0-next.gae2995f-darwin-x64.tar.gz"
-      sha256 "cb33926538f39e4c23eb554c4be537172b8c2a5cfd47a23693eee80a1e460395"
+      url "https://github.com/alvera-ai/homebrew-tap/releases/download/v0.18.0-next.g58b9183/alvera-0.18.0-next.g58b9183-darwin-x64.tar.gz"
+      sha256 "2002ee6501b3e05597363739b44297771136be32d9a209a4896ebf9c52f96413"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/alvera-ai/homebrew-tap/releases/download/v0.17.0-next.gae2995f/alvera-0.17.0-next.gae2995f-linux-x64.tar.gz"
-      sha256 "aa86a80bc4738090dfbe55d963d7992b139e9718bb05153e89e7b9d666eeeb72"
+      url "https://github.com/alvera-ai/homebrew-tap/releases/download/v0.18.0-next.g58b9183/alvera-0.18.0-next.g58b9183-linux-x64.tar.gz"
+      sha256 "bc020848a1badda19f351bfa16c71af20d8a4cec4891acb69e89f50b7d5e96eb"
     end
     on_arm do
-      url "https://github.com/alvera-ai/homebrew-tap/releases/download/v0.17.0-next.gae2995f/alvera-0.17.0-next.gae2995f-linux-arm64.tar.gz"
-      sha256 "c8b3391e5a4fc57a41a885c30045c052b0456e9e5cd961b3e097f4972e0a8fab"
+      url "https://github.com/alvera-ai/homebrew-tap/releases/download/v0.18.0-next.g58b9183/alvera-0.18.0-next.g58b9183-linux-arm64.tar.gz"
+      sha256 "ee19f1f62c439b8e5e0a06c4c86602eae45a7e2d1c5f6fddb95169e356360833"
     end
   end
 
