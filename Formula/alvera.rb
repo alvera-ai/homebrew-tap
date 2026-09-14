@@ -1,28 +1,28 @@
 class Alvera < Formula
   desc "Alvera platform CLI — manifest-driven provisioning + spec conduit"
   homepage "https://github.com/alvera-ai/homebrew-tap"
-  version "0.18.2"
+  version "0.19.1"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/alvera-ai/homebrew-tap/releases/download/v0.18.2/alvera-0.18.2-darwin-arm64.tar.gz"
-      sha256 "067f407e418bf239adfb45f895ff67da45f01fb8be11195f05ce8806f1b5f928"
+      url "https://github.com/alvera-ai/homebrew-tap/releases/download/v0.19.1/alvera-0.19.1-darwin-arm64.tar.gz"
+      sha256 "fe556d8c340448a04ef08dbbf65f7793d3e2b3031bb8bda57d02e97af9fe7c41"
     end
     on_intel do
-      url "https://github.com/alvera-ai/homebrew-tap/releases/download/v0.18.2/alvera-0.18.2-darwin-x64.tar.gz"
-      sha256 "710944ce37c88a8e57cafc39e5042809feb728f5959df2b077c0d726b892d8bd"
+      url "https://github.com/alvera-ai/homebrew-tap/releases/download/v0.19.1/alvera-0.19.1-darwin-x64.tar.gz"
+      sha256 "9f03bda09de5512c554b14d4d37b4130b07941d412812c9d8181706e3ff88024"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/alvera-ai/homebrew-tap/releases/download/v0.18.2/alvera-0.18.2-linux-x64.tar.gz"
-      sha256 "de6494b9c276249bfc8338f4ed6335d27b99fc81f6aaead2e0a0851e0355c48c"
+      url "https://github.com/alvera-ai/homebrew-tap/releases/download/v0.19.1/alvera-0.19.1-linux-x64.tar.gz"
+      sha256 "51aa6d69c7085db36bd8c0358242c136efa42a8c067b529045ddca1c76ddd336"
     end
     on_arm do
-      url "https://github.com/alvera-ai/homebrew-tap/releases/download/v0.18.2/alvera-0.18.2-linux-arm64.tar.gz"
-      sha256 "a41efdbfa61a0996238d81f72a9f7c7cbaa5fdaa9313abc7c7c7520e186e6ee6"
+      url "https://github.com/alvera-ai/homebrew-tap/releases/download/v0.19.1/alvera-0.19.1-linux-arm64.tar.gz"
+      sha256 "20aa6294a6db6688dbe72a99893c0dc15ebbf4b2f365e825370179687a92c81a"
     end
   end
 
